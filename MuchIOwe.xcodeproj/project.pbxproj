@@ -11,6 +11,7 @@
 		621558BF296C9DFE00F694CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621558BE296C9DFE00F694CB /* ContentView.swift */; };
 		621558C1296C9DFF00F694CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621558C0296C9DFF00F694CB /* Assets.xcassets */; };
 		621558C5296C9DFF00F694CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621558C4296C9DFF00F694CB /* Preview Assets.xcassets */; };
+		621558CC296CA89300F694CB /* ProvidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621558CB296CA89300F694CB /* ProvidersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		621558C0296C9DFF00F694CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		621558C2296C9DFF00F694CB /* MuchIOwe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MuchIOwe.entitlements; sourceTree = "<group>"; };
 		621558C4296C9DFF00F694CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		621558CB296CA89300F694CB /* ProvidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		621558BB296C9DFE00F694CB /* MuchIOwe */ = {
 			isa = PBXGroup;
 			children = (
+				621558CB296CA89300F694CB /* ProvidersView.swift */,
 				621558BC296C9DFE00F694CB /* MuchIOweApp.swift */,
 				621558BE296C9DFE00F694CB /* ContentView.swift */,
 				621558C0296C9DFF00F694CB /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			files = (
 				621558BF296C9DFE00F694CB /* ContentView.swift in Sources */,
 				621558BD296C9DFE00F694CB /* MuchIOweApp.swift in Sources */,
+				621558CC296CA89300F694CB /* ProvidersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +279,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -287,10 +292,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.MuchIOwe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Debug;
 		};
@@ -313,6 +320,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -325,10 +333,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamwinick.MuchIOwe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Release;
 		};

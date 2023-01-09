@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var count = 0
+    @State private var name = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                Section {
+                    Button("Count: \(count)") {
+                        self.count += 1
+                    }
+                    TextField("Enter your name", text: $name)
+                    Text("Hello, \(name) \(count)")
+                    ForEach(0..<count, id: \.self) {_ in
+                        Text("Hello, \(name) \(count)")
+                    }
+                }
+            }
+            .navigationTitle("Much I Owe")
+            // not available on TVOS
+            // .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
     }
 }
 
