@@ -12,17 +12,17 @@ struct ProvidersView: View {
         NavigationView {
             Form {
                 Section {
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                    Text("Hello, world!")
+                    Text("Epic M3U")
+                    Text("Backup Service M3U")
+                    Text("Chrono M3U")
                 }
                 Section {
-                    Text("Hello, world!")
-                    Text("Hello, world!")
-                    Text("Hello, world!")
+                    Text("Epic XC")
+                    Text("Backup Service XC")
+                    Text("Chrono XC")
                 }
             }
-            .navigationTitle("Much I Owe")
+            .navigationTitle("Select an IPTV Provider")
             // not available on TVOS
             // .navigationBarTitleDisplayMode(.inline)
         }
