@@ -1,34 +1,17 @@
-//
-//  ContentView.swift
-//  MuchIOwe
-//
-//  Created by Adam Winick on 2023-01-09.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var checkAmount = 0.0
+    @State private var numberOfPeople = 2
+    @State private var tipPercentage = 20
     
-    @State private var count = 0
-    @State private var name = ""
+    let tipPercentages = [10, 15, 20, 25, 0]
     
     var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    Button("Count: \(count)") {
-                        self.count += 1
-                    }
-                    TextField("Enter your name", text: $name)
-                    Text("Hello, \(name) \(count)")
-                    ForEach(0..<count, id: \.self) {_ in
-                        Text("Hello, \(name) \(count)")
-                    }
-                }
+        Form {
+            Section {
+                TextField("Amount", value: $checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "CAD"))
             }
-            .navigationTitle("Much I Owe")
-            // not available on TVOS
-            // .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
